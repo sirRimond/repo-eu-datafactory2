@@ -246,6 +246,12 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"parameters": {
+					"filename": {
+						"type": "string",
+						"defaultValue": "Log2.csv"
+					}
+				},
 				"annotations": []
 			},
 			"dependsOn": [
