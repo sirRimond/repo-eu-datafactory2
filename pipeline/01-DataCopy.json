@@ -48,7 +48,10 @@
 				"inputs": [
 					{
 						"referenceName": "ds_adls_logdata_csv",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": "Log.csv"
+						}
 					}
 				],
 				"outputs": [
