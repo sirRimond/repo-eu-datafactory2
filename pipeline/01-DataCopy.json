@@ -50,7 +50,10 @@
 						"referenceName": "ds_adls_logdata_csv",
 						"type": "DatasetReference",
 						"parameters": {
-							"filename": "Log.csv"
+							"filename": {
+								"value": "@pipeline().parameters.filename",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -65,7 +68,7 @@
 		"parameters": {
 			"filename": {
 				"type": "string",
-				"defaultValue": "Log2.csv"
+				"defaultValue": "Log.csv"
 			}
 		},
 		"annotations": []
